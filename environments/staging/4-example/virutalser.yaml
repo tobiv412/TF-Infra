@@ -2,7 +2,7 @@ apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
   name: my-virtualservice
-  namespace: prod  # Change this to your namespace
+  namespace: default # Change this to your namespace
 spec:
   hosts:
   - "*"
