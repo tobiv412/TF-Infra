@@ -14,12 +14,12 @@ spec:
         protocol: HTTP
       hosts:
         - app.devopsbyexample.com
-    - port:
-        number: 443
-        name: https
-        protocol: HTTPS
-      hosts:
-        - app.devopsbyexample.com
-      tls:
-        credentialName: api-devopsbyexample-com-crt
-        mode: SIMPLE
+    # - port:
+    #     number: 443
+    #     name: https
+    #     protocol: HTTPS
+    #   hosts:
+    #     - app.devopsbyexample.com
+      # tls:
+      #   credentialName: api-devopsbyexample-com-crt
+      #   mode: SIMPLE

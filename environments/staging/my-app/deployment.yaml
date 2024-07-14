@@ -30,4 +30,5 @@ spec:
                 cpu: "500m"
       imagePullSecrets:
         - name: dockerconfigjson
+     
       
