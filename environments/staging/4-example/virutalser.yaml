@@ -1,0 +1,19 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: my-virtualservice
+  namespace: prod  # Change this to your namespace
+spec:
+  hosts:
+  - "*"
+  gateways:
+  - api  # reference to the Gateway resource
+  http:
+  - match:
+    - uri:
+        prefix: /myapp
+    route:
+    - destination:
+        host: my-service  # Change this to your service name
+        port:
+          number: 80
