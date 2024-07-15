@@ -12,7 +12,7 @@ spec:
     repoURL: https://github.com/tobiv412/tf-infra.git
     targetRevision: HEAD
     # path: environments/staging/my-app
-    path: environments/staging/4-example
+    path: environments/staging/my-app
   destination:
     server: https://kubernetes.default.svc
   syncPolicy:
